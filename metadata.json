@@ -1,0 +1,6 @@
+{
+  "name": "Kaldas Beauty Salon",
+  "description": "A modern, premium, Apple-inspired luxury beauty salon and professional academy website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
