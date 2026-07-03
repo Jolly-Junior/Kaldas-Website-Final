@@ -1,8 +1,24 @@
 import { Service, Course, FAQ, Testimonial, GalleryItem, BeforeAfterItem } from './types';
 
-export const HERO_IMAGE = '/src/assets/images/beauty_hero_banner_1782993942691.jpg';
-export const ACADEMY_IMAGE = '/src/assets/images/academy_class_1782993957990.jpg';
-export const FACIAL_IMAGE = '/src/assets/images/facial_treatment_1782993972475.jpg';
+import beautyHero from './assets/images/beauty_hero_banner_1782993942691.jpg';
+import academyClass from './assets/images/academy_class_1782993957990.jpg';
+import facialTreatment from './assets/images/facial_treatment_1782993972475.jpg';
+import regeneratedImage_1783087226828 from './assets/images/regenerated_image_1783087226828.jpg';
+import regeneratedImage_1783008929233 from './assets/images/regenerated_image_1783008929233.jpg';
+import regeneratedImage_1783008930703 from './assets/images/regenerated_image_1783008930703.jpg';
+import regeneratedImage_1783008931625 from './assets/images/regenerated_image_1783008931625.jpg';
+import regeneratedImage_1783010054749 from './assets/images/regenerated_image_1783010054749.jpg';
+import regeneratedImage_1783010055801 from './assets/images/regenerated_image_1783010055801.jpg';
+import regeneratedImage_1783010057038 from './assets/images/regenerated_image_1783010057038.jpg';
+import regeneratedImage_1783010058365 from './assets/images/regenerated_image_1783010058365.jpg';
+import regeneratedImage_1783087217960 from './assets/images/regenerated_image_1783087217960.jpg';
+import regeneratedImage_1783087219606 from './assets/images/regenerated_image_1783087219606.jpg';
+import regeneratedImage_1783087225447 from './assets/images/regenerated_image_1783087225447.jpg';
+import regeneratedImage_1783087221842 from './assets/images/regenerated_image_1783087221842.jpg';
+
+export const HERO_IMAGE = beautyHero;
+export const ACADEMY_IMAGE = academyClass;
+export const FACIAL_IMAGE = facialTreatment;
 
 export const SERVICES: Service[] = [
   {
@@ -13,7 +29,7 @@ export const SERVICES: Service[] = [
     price: '$120 - $350',
     category: 'hair',
     iconName: 'Scissors',
-    image: '/src/assets/images/regenerated_image_1783087226828.jpg'
+    image: regeneratedImage_1783087226828
   },
   {
     id: 'bridal-makeup',
@@ -161,37 +177,37 @@ export const GALLERY: GalleryItem[] = [
     id: 'g1',
     title: 'Signature Wig Installation & Custom Layered Cut',
     category: 'Hair',
-    image: '/src/assets/images/regenerated_image_1783008929233.jpg'
+    image: regeneratedImage_1783008929233
   },
   {
     id: 'g2',
     title: 'Deluxe Gel Acrylic Nail Art Extensions with Chrome Details',
     category: 'Nails',
-    image: '/src/assets/images/regenerated_image_1783008930703.jpg'
+    image: regeneratedImage_1783008930703
   },
   {
     id: 'g3',
     title: 'Flawless Bridal Glamour & Custom Hair Updo',
     category: 'Makeup',
-    image: '/src/assets/images/regenerated_image_1783008931625.jpg'
+    image: regeneratedImage_1783008931625
   },
   {
     id: 'g4',
     title: 'Signature Flawless Russian Volume Eyelash Extensions',
     category: 'Lashes & Brows',
-    image: '/src/assets/images/regenerated_image_1783010054749.jpg'
+    image: regeneratedImage_1783010054749
   },
   {
     id: 'g5',
     title: 'Premium Weave Styling with Golden Highlights',
     category: 'Hair',
-    image: '/src/assets/images/regenerated_image_1783010055801.jpg'
+    image: regeneratedImage_1783010055801
   },
   {
     id: 'g6',
     title: 'Bespoke Evening Glow Airbrush Makeup & Soft Lip Contour',
     category: 'Makeup',
-    image: '/src/assets/images/regenerated_image_1783010057038.jpg'
+    image: regeneratedImage_1783010057038
   },
   {
     id: 'g7',
@@ -210,7 +226,7 @@ export const GALLERY: GalleryItem[] = [
     id: 'g9',
     title: 'Behind the Scenes: Couture Hair Curling & Styling',
     category: 'Reels & Videos',
-    image: '/src/assets/images/regenerated_image_1783010058365.jpg',
+    image: regeneratedImage_1783010058365,
     videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-stylist-combing-a-clients-hair-44161-large.mp4'
   },
   {
@@ -241,16 +257,16 @@ export const BEFORE_AFTER: BeforeAfterItem[] = [
     id: 'ba1',
     title: 'Keratin Restore & Parisian Balayage',
     description: 'Revitalized dry, colored hair with structured nourishment and seamless blonde highlights.',
-    beforeImage: '/src/assets/images/regenerated_image_1783087217960.jpg',
-    afterImage: '/src/assets/images/regenerated_image_1783087219606.jpg',
+    beforeImage: regeneratedImage_1783087217960,
+    afterImage: regeneratedImage_1783087219606,
     category: 'Hair'
   },
   {
     id: 'ba2',
     title: 'Sovereign Hydra-Radiance Facial',
     description: 'Clinical hydration and botanical enzymes visibly smoothed skin texture and redness.',
-    beforeImage: '/src/assets/images/regenerated_image_1783087225447.jpg',
-    afterImage: '/src/assets/images/regenerated_image_1783087221842.jpg',
+    beforeImage: regeneratedImage_1783087225447,
+    afterImage: regeneratedImage_1783087221842,
     category: 'Skincare'
   }
 ];

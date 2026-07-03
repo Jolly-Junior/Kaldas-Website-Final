@@ -1,5 +1,8 @@
 import { motion } from 'motion/react';
 import { Instagram, Star, ExternalLink } from 'lucide-react';
+import ig1Img from '../assets/images/regenerated_image_1783008929233.jpg';
+import ig2Img from '../assets/images/regenerated_image_1783008930703.jpg';
+import ig3Img from '../assets/images/regenerated_image_1783008931625.jpg';
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -9,17 +12,17 @@ export default function Footer({ onNavigate }: FooterProps) {
   const instagramFeed = [
     {
       id: 'ig1',
-      image: '/src/assets/images/regenerated_image_1783008929233.jpg',
+      image: ig1Img,
       link: 'https://www.instagram.com/kaldasbeauty/'
     },
     {
       id: 'ig2',
-      image: '/src/assets/images/regenerated_image_1783008930703.jpg',
+      image: ig2Img,
       link: 'https://www.instagram.com/kaldasbeauty/'
     },
     {
       id: 'ig3',
-      image: '/src/assets/images/regenerated_image_1783008931625.jpg',
+      image: ig3Img,
       link: 'https://www.instagram.com/kaldasbeauty/'
     },
     {

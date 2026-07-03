@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoImage from '../assets/images/Final Logo.PNG';
 
 interface KaldasLogoProps {
   className?: string;
@@ -33,7 +34,7 @@ export default function KaldasLogo({ className = "w-8 h-8", size }: KaldasLogoPr
 
   return (
     <img
-      src="/src/assets/images/Final Logo.PNG"
+      src={logoImage}
       alt="Kaldas Logo"
       className={`${className} object-contain`}
       width={size}
