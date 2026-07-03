@@ -20,13 +20,12 @@ interface ServicesProps {
 }
 
 export default function Services({ onSelectService }: ServicesProps) {
-  const [activeTab, setActiveTab] = useState<'all' | 'hair' | 'makeup' | 'skin' | 'nails' | 'lashes'>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'hair' | 'makeup' | 'nails' | 'lashes'>('all');
 
   const categories = [
     { name: 'All Signature Treatments', id: 'all' },
     { name: 'Couture Hair', id: 'hair' },
     { name: 'Bridal & Editorial Makeup', id: 'makeup' },
-    { name: 'Clinical Skincare', id: 'skin' },
     { name: 'Nail Artistry', id: 'nails' },
     { name: 'Lashes & Brows', id: 'lashes' }
   ];

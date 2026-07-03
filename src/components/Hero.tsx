@@ -2,16 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowDown, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 
+import slide1 from '../assets/images/K1.png';
+import slide2 from '../assets/images/K2.png';
+import slide3 from '../assets/images/K3.png';
+import slide4 from '../assets/images/K4.jpeg';
+
 interface HeroProps {
   onNavigate: (sectionId: string) => void;
 }
 
 const HERO_IMAGES = [
-  'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1600&q=80', // Luxury salon space
-  'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1600&q=80', // Hair styling
-  'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1600&q=80', // Professional makeup
-  'https://images.unsplash.com/photo-1604654894610-df4906b197ae?auto=format&fit=crop&w=1600&q=80', // Elegant manicure/pedicure
-  'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1600&q=80'  // Skincare treatment
+  slide1,
+  slide2,
+  slide3,
+  slide4
 ];
 
 export default function Hero({ onNavigate }: HeroProps) {
@@ -21,7 +25,7 @@ export default function Hero({ onNavigate }: HeroProps) {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % HERO_IMAGES.length);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(timer);
   }, []);
 
@@ -38,7 +42,7 @@ export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen flex flex-col justify-end pb-32 md:pb-36 overflow-hidden bg-brand-green"
+      className="relative w-full min-h-screen flex flex-col justify-end pb-12 md:pb-14 overflow-hidden bg-brand-green"
     >
       {/* Background Slideshow */}
       <div id="hero-slideshow-container" className="absolute inset-0 z-0">
@@ -49,10 +53,10 @@ export default function Hero({ onNavigate }: HeroProps) {
             src={HERO_IMAGES[currentIndex]}
             alt="Kaldas Luxury Beauty Salon background"
             referrerPolicy="no-referrer"
-            initial={{ opacity: 0, scale: 1.02 }}
+            initial={{ opacity: 0, scale: 1.00 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.98 }}
-            transition={{ duration: 1.2, ease: 'easeInOut' }}
+            transition={{ duration: 1.0, ease: 'easeInOut' }}
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
         </AnimatePresence>
@@ -141,7 +145,7 @@ export default function Hero({ onNavigate }: HeroProps) {
         animate={{ opacity: 0.8 }}
         transition={{ delay: 1, duration: 0.8 }}
         onClick={() => onNavigate('about')}
-        className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-brand-beige/50 hover:text-brand-gold transition-colors duration-300 cursor-pointer group z-10"
+        className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-brand-beige/50 hover:text-brand-gold transition-colors duration-300 cursor-pointer group z-10"
       >
         <motion.div
           animate={{ y: [0, 4, 0] }}

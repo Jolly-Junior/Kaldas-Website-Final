@@ -1,6 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MapPin, Phone, Mail, Clock, MessageSquare, Send, CheckCircle, Instagram, Star } from 'lucide-react';
+import mapImage from '../assets/images/map.png';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -35,7 +36,7 @@ export default function Contact() {
       title: 'Our Sanctuary Address',
       desc: '📍 Medhanyalem mall 5th floor, Addis Ababa, Ethiopia',
       icon: MapPin,
-      link: 'https://maps.google.com/?q=Medhanialem+Mall,+Addis+Ababa,+Ethiopia'
+      link: 'https://www.google.com/maps/search/?api=1&query=Kaldas+Beauty+Salon+Medhanyalem+Mall+Addis+Ababa+Ethiopia'
     },
     {
       id: 'c-tel',
@@ -122,10 +123,11 @@ export default function Contact() {
 
             {/* Apple-style Interactive Map Card Placeholder */}
             <div className="relative rounded-3xl overflow-hidden aspect-16/10 shadow-md border border-brand-charcoal/5 group">
-              {/* Styled background grid representing map */}
-              <div className="absolute inset-0 bg-[#ebe3d5] dark:bg-[#11241f] flex items-center justify-center transition-colors duration-500">
-                <div className="absolute inset-0 bg-[radial-gradient(#C9B15B_1.5px,transparent_1.5px)] [background-size:16px_16px] opacity-15" />
-                
+              {/* Styled background image representing map */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat flex items-center justify-center transition-all duration-500"
+                style={{ backgroundImage: `url(${mapImage})`, backgroundColor: '#ebe3d5' }}
+              >
                 {/* Visual Locator Pin */}
                 <div className="relative flex flex-col items-center">
                   <motion.div
@@ -146,7 +148,7 @@ export default function Contact() {
                   <span className="font-sans text-[10px] text-brand-charcoal/60 dark:text-brand-ivory/80 font-light">Medhanyalem Mall, Addis Ababa</span>
                 </div>
                 <a
-                  href="https://maps.google.com/?q=Medhanialem+Mall,+Addis+Ababa,+Ethiopia"
+                  href="https://www.google.com/maps/search/?api=1&query=Kaldas+Beauty+Salon+Medhanyalem+Mall+Addis+Ababa+Ethiopia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-brand-green dark:bg-brand-gold text-brand-ivory dark:text-brand-green px-4 py-2 rounded-full font-sans text-[9px] tracking-widest uppercase font-bold hover:bg-brand-gold dark:hover:bg-brand-ivory hover:text-brand-green dark:hover:text-brand-green transition-all"

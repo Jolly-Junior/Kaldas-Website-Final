@@ -88,9 +88,14 @@ export default function Booking({ selectedServiceId, onSelectService }: BookingP
                 <span className="font-sans text-[10px] tracking-wider text-brand-charcoal/50 dark:text-brand-ivory/50 uppercase font-bold block mb-1">
                   SALON LOCATION
                 </span>
-                <p className="font-sans text-sm font-semibold text-neutral-950 dark:text-brand-ivory leading-snug">
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Kaldas+Beauty+Salon+Medhanyalem+Mall+Addis+Ababa+Ethiopia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans text-sm font-semibold text-neutral-950 dark:text-brand-ivory leading-snug hover:underline block hover:text-brand-gold transition-colors"
+                >
                   📍 Medhanyalem mall 5th floor, Addis Ababa, Ethiopia
-                </p>
+                </a>
               </div>
             </div>
 

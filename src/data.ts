@@ -42,16 +42,6 @@ export const SERVICES: Service[] = [
     image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80'
   },
   {
-    id: 'facial-treatments',
-    name: 'Gold Glow Facial',
-    description: 'A sensory lifting and firming treatment utilizing botanical enzymes, lymphatic drainage, and customized gold-infused serums.',
-    duration: '75 mins',
-    price: '$180',
-    category: 'skin',
-    iconName: 'Flower2',
-    image: FACIAL_IMAGE
-  },
-  {
     id: 'professional-makeup',
     name: 'Editorial Makeup',
     description: 'Flawless makeup artistry tailored for high-fashion events, photo shoots, or elite galas, crafted with luxury pigments.',
@@ -80,16 +70,6 @@ export const SERVICES: Service[] = [
     category: 'lashes',
     iconName: 'Eye',
     image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80'
-  },
-  {
-    id: 'skincare',
-    name: 'Sovereign Hydra-Radiance',
-    description: 'Premium medical-grade hydration infused with high-frequency microcurrents, cooling globes, and custom oxygen delivery.',
-    duration: '90 mins',
-    price: '$210',
-    category: 'skin',
-    iconName: 'Layers',
-    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80'
   }
 ];
 
@@ -210,12 +190,6 @@ export const GALLERY: GalleryItem[] = [
     image: regeneratedImage_1783010057038
   },
   {
-    id: 'g7',
-    title: 'Deluxe Hydrating Skin Treatment & Face Massage',
-    category: 'Skincare',
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80'
-  },
-  {
     id: 'g8',
     title: 'Perfect Brow Mapping & Keratin Hybrid Tint',
     category: 'Lashes & Brows',
@@ -242,13 +216,6 @@ export const GALLERY: GalleryItem[] = [
     category: 'Reels & Videos',
     image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80',
     videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-manicurist-polishing-the-nails-of-a-woman-44169-large.mp4'
-  },
-  {
-    id: 'g12',
-    title: 'Deep Facial Cleansing & Hydra Glow Therapy',
-    category: 'Reels & Videos',
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80',
-    videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-cosmetologist-cleansing-the-skin-of-a-client-44170-large.mp4'
   }
 ];
 
@@ -263,11 +230,11 @@ export const BEFORE_AFTER: BeforeAfterItem[] = [
   },
   {
     id: 'ba2',
-    title: 'Sovereign Hydra-Radiance Facial',
-    description: 'Clinical hydration and botanical enzymes visibly smoothed skin texture and redness.',
+    title: 'Couture Bridal Makeup & Brow Sculpting',
+    description: 'Bespoke skin preparation, glowing airbrush foundation, and a precision hybrid brow lift.',
     beforeImage: regeneratedImage_1783087225447,
     afterImage: regeneratedImage_1783087221842,
-    category: 'Skincare'
+    category: 'Makeup'
   }
 ];
 
@@ -276,7 +243,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 't1',
     name: 'Helena Vestergaard',
     role: 'Fashion Consultant',
-    review: 'Kaldas is the epitome of Scandinavian luxury. The attention to detail during my balayage and skincare session was immaculate. The deep forest green ambience makes you feel disconnected from the chaotic world.',
+    review: 'Kaldas is the epitome of Scandinavian luxury. The attention to detail during my balayage and custom styling session was immaculate. The deep forest green ambience makes you feel disconnected from the chaotic world.',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&h=400&q=80'
   },
